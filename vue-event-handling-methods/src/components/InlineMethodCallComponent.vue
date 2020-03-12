@@ -10,10 +10,6 @@ export default {
   name: 'InlineMethodCallComponent',
   methods: {
     log(msg, event) {
-      if (event) {
-        event.preventDefault();
-      }
-
       console.log(event.target.tagName, msg);
     }
   }
